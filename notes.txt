@@ -1,0 +1,18 @@
+Bước 1: Kiểm tra quyền truy cập file ONNX
+
+Mở PowerShell hoặc CMD và kiểm tra xem file ONNX có tồn tại không:
+dir C:\Users\phanh\.NudeNet\
+
+Nếu file classifier_lite.onnx có trong thư mục này, hãy kiểm tra quyền đọc:
+icacls "C:\Users\phanh\.NudeNet\classifier_lite.onnx"
+
+👉 Nếu không có quyền, cấp quyền truy cập:
+icacls "C:\Users\phanh\.NudeNet\classifier_lite.onnx" /grant Everyone:F
+
+Bước 2: Trong file nudityDetection, đổi NudeClassifierLite -> NudeClassifier
+
+Bước 3: Cài đặt Microsoft Visual C++ 14.0
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+Bước 4: Cài đặt opencv-python==4.5.3.56
+
