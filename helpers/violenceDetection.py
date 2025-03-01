@@ -10,28 +10,17 @@ from transformers import ViTForImageClassification, ViTFeatureExtractor
 from PIL import Image
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-model_path = "./models/vit-violence"
+
+# model_path = "./models/vit-violence"
+model_path = "jaranohaal/vit-base-violence-detection"
+
 labels = ["Non-Violence", "Violence"]
 
 print("--------Loading the model---------")
-# model = keras.models.load_model('./models')
+
 model = ViTForImageClassification.from_pretrained(model_path)
 feature_extractor = ViTFeatureExtractor.from_pretrained(model_path)
 
-# def violence_detection(img_path):
-#     """
-#     PARAMS::
-#     - img_path a path for the image that I'm gonna to work on
-#     Returns::
-#     - return a numpy array with 3 values representing our 3 classes
-#     0 for drugs, 1 for violence, 2 for natural
-#     """
-
-#     img = prepare_img(img_path)
-#     preds = model.predict(img)
-#     # print(f"{preds} \n {preds.shape} here is our predictions")
-    
-#     return preds
 
 def violence_detection(img_path):
     # Load an image
@@ -52,5 +41,5 @@ def violence_detection(img_path):
 
     # Print the predicted class
     # print("Predicted class:", model.config.id2label[predicted_class_idx])
-    
+
     return violence_score
