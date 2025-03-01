@@ -13,12 +13,12 @@ This project provides an API for detecting NSFW content in images and videos, as
 - **REST API interface** for easy integration.
 - **Secure file handling**, processing, and automatic deletion after analysis.
 
-## 🛠 Installation
+## 🛠 Installation (Python version <= 3.9)
 
 ### 1️⃣ Create a virtual environment & install dependencies
 
 ```sh
-python -m venv venv
+py -3.9 -m venv myenv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
