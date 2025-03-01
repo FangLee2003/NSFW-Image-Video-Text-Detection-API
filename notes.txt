@@ -16,3 +16,4 @@ https://aka.ms/vs/17/release/vc_redist.x64.exe
 
 Bước 4: Cài đặt opencv-python==4.5.3.56
 
+Bước 5: https://render.com/docs/python-version
