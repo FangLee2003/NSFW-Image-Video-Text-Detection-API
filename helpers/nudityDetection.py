@@ -1,9 +1,8 @@
 import os
-from nudenet import NudeClassifier
+from models.nudenet import NudeClassifier
 
 print('----------Initializing the NudeClassifier----------')
 clf = NudeClassifier()
-
 
 def nude_detection(img_path):
     nudity_score = clf.classify(img_path)
