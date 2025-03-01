@@ -33,8 +33,8 @@ class Classifier:
         # if not os.path.exists(model_path):
         #     print("Downloading the checkpoint to", model_path)
         #     pydload.dload(url, save_to_path=model_path, max_time=None)
-        
-        model_path = "./classifier_model.onnx"
+        current_dir = os.path.dirname(os.path.abspath(__file__))  # Chuyển thành đường dẫn tuyệt đối
+        model_path = os.path.join(current_dir, "classifier_model.onnx")
         
         self.nsfw_model = onnxruntime.InferenceSession(model_path)
 
