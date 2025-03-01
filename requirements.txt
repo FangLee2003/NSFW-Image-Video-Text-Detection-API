@@ -1,5 +1,6 @@
 ﻿absl-py==0.13.0
 astunparse==1.6.3
+blinker==1.9.0
 cached-property==1.5.2
 cachetools==4.2.2
 certifi==2021.5.30
@@ -37,7 +38,7 @@ networkx==2.5.1
 NudeNet==2.0.9
 numpy==1.19.5
 oauthlib==3.1.1
-onnx==1.17.0
+onnx==1.15.0
 onnxruntime==1.8.0
 opencv-python==4.5.3.56
 opencv-python-headless==4.5.2.54
@@ -45,7 +46,7 @@ opt-einsum==3.3.0
 packaging==24.2
 Pillow==8.2.0
 progressbar2==3.53.1
-protobuf==3.17.3
+protobuf==5.29.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pydload==1.0.9
@@ -72,10 +73,10 @@ tensorflow-estimator==2.5.0
 termcolor==1.1.0
 tifffile==2021.7.2
 tokenizers==0.21.0
-torch==2.6.0
+torch==2.0.1
 tqdm==4.67.1
 transformers==4.49.0
-typing_extensions==4.12.2
+typing-extensions==3.7.4.3
 urllib3==1.26.6
 Werkzeug==2.0.1
 wrapt==1.12.1
